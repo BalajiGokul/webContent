@@ -1,0 +1,35 @@
+        permission java.net.SocketPermission "localhost:1527", "listen";
+
+cd C:\Users\XBBNHHK\Downloads\eclipse-jee-mars-R-win32-x86_64-1.0\eclipse-jee-mars-R-win32-x86_64\jdk1.8.0_60\db\bin
+
+
+set DERBY_HOME=C:\Users\XBBNHHK\Downloads\eclipse-jee-mars-R-win32-x86_64-1.0\eclipse-jee-mars-R-win32-x86_64\jdk1.8.0_60\db\lib
+
+
+set JAVA_HOME=C:\Users\XBBNHHK\Downloads\eclipse-jee-mars-R-win32-x86_64-1.0\eclipse-jee-mars-R-win32-x86_64\jdk1.8.0_60\bin
+
+
+set PATH=C:\Users\XBBNHHK\Downloads\eclipse-jee-mars-R-win32-x86_64-1.0\eclipse-jee-mars-R-win32-x86_64\jdk1.8.0_60\db\bin;C:\Users\XBBNHHK\Downloads\eclipse-jee-mars-R-win32-x86_64-1.0\eclipse-jee-mars-R-win32-x86_64\jdk1.8.0_60\bin;%PATH%
+
+
+set DERBY_HOME = C:\Users\XBBNHHK\Downloads\eclipse-jee-mars-R-win32-x86_64-1.0\eclipse-jee-mars-R-win32-x86_64\jdk1.8.0_60\db\lib
+
+
+startNetworkServer -h 172.24.18.102
+
+
+cd C:\Data\jdk1.7.0_55\db
+ 
+set DERBY_HOME=C:\Data\jdk1.7.0_55\db\lib;
+
+set JAVA_HOME=C:\Data\jdk1.7.0_55\bin;
+
+set PATH=C:\Data\jdk1.7.0_55\bin;C:\Data\jdk1.7.0_55\db\bin;%PATH%;
+
+set DERBY_HOME=C:\Data\jdk1.7.0_55\db\lib;
+
+startNetworkServer -h 172.24.18.102
+
+
+
+connect 'jdbc:derby://172.24.18.102:1527/balaji;create=true;user=balaji;password=balaji;';
